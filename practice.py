@@ -40,7 +40,7 @@ if menu == "채팅하기":
     st.write("키우던 아이랑 이야기해보세요!")
     initialize_session_state()
     # 챗 대화 내역을 저장하는 리스트 초기화
-    if pet_survey:=st.text_input("반려동물의 종류, 이름, 성별, 품종, 크기, 성격, 색깔을 입력하세요"):
+    if pet_survey:=st.text_input("반려동물의 종류, 이름, 성별, 품종, 크기, 성격, 색깔등 자세하게 입력하세요"):
         chat.save_basic_info(pet_survey)
         st.markdown(f"**반려동물의 기본 정보**: \n{pet_survey}")
     # 채팅 입력창과 전송 버튼
