@@ -10,7 +10,10 @@ from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
+api_key = os.getenv("OPENAI_API_KEY")
+
+openai.api_key = api_key
 
 
 class Chat:
