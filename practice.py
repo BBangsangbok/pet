@@ -1,5 +1,10 @@
 import AI
 import streamlit as st
+from dotenv import load_dotenv 
+import os 
+
+
+load_dotenv()
 
 # 사이드바 메뉴를 통해 페이지 선택
 menu = st.sidebar.selectbox("메뉴 선택", ("채팅하기", "커뮤니티"))
