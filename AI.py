@@ -5,7 +5,11 @@ from langchain.memory import ConversationBufferMemory, ConversationSummaryBuffer
 from operator import itemgetter
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+
+load_dotenv()
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
